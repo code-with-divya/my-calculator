@@ -10,12 +10,14 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #1b1b1b;
+  background: #e62ca2;
 }
 
 .calculator {
   position: relative;
   display: grid;
+  /* width: 170px; */
+
 }
 
 .calculator .value {
@@ -41,6 +43,7 @@ body {
 .calculator span:active {
   background: rgb(255, 163, 26);
   color: #fff;
+  
 }
 
 .calculator span.clear {
