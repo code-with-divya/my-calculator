@@ -18,6 +18,8 @@ function Main() {
   }
 
   return (
+   <>
+   <center className="his">HEY THIS IS MY CALCULATOR....!!!</center>
     <form class="calculator" name="calc">
       <input type="text" class="value" value={inputvalue} />
       <span class="num clear" onClick={() => clear()}>
@@ -45,6 +47,7 @@ function Main() {
         =
       </span>
     </form>
+   </>
   );
 }
 

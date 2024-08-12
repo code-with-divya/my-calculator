@@ -10,14 +10,18 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #e62ca2;
+  background: #f3cef3;
+ 
 }
 
 .calculator {
   position: relative;
   display: grid;
-  /* width: 170px; */
-
+  border-radius:20px 20px 20px 20px ;
+  height: 100%;
+  width: 600px;
+  
+ 
 }
 
 .calculator .value {
@@ -28,11 +32,13 @@ body {
   outline: none;
   padding: 10px;
   font-size: 18px;
+
 }
 
+/* calculatore button and number */
 .calculator span {
   display: grid;
-  width: 60px;
+  width: 170px;
   height: 60px;
   background: #292929;
   place-items: center;
@@ -40,17 +46,18 @@ body {
   color: #fff;
 }
 
+/* plus  + yellow color  */
 .calculator span:active {
   background: rgb(255, 163, 26);
   color: #fff;
   
 }
 
+/* clear c yellow clear */
 .calculator span.clear {
   grid-column: span 2;
-  width: 120px;
+  width: 340px;
   background: rgb(255, 163, 26);
-  /* color: #fff; */
 }
 
 .calculator span.plus {
@@ -58,7 +65,12 @@ body {
   height: 120px;
 }
 
+/* last yellow color */
 .calculator span.equal {
   background: rgb(255, 163, 26);
-  /* background: #03b1ff; */
+}
+.his{
+
+      margin-bottom: 40px;
+      font-size: 20px;
 }
