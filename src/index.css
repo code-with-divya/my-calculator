@@ -1,76 +1,106 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-}
+} */
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #f3cef3;
- 
+  background: #ffffff;
+
 }
 
 .calculator {
   position: relative;
   display: grid;
-  border-radius:20px 20px 20px 20px ;
+  border: 1px solid rgba(200, 47, 154, 0.46);
   height: 100%;
   width: 600px;
-  
- 
+  background-color: rgba(200, 47, 154, 0.46);
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 25px 25px 25px  rgba(244, 187, 206, 0.745);
+
+
 }
 
+/* search bar */
 .calculator .value {
   grid-column: span 4;
-  height: 100px;
+  height: 80px;
+  width: 530px;
+  margin-top: 16px;
+  margin-left: 20px;
   text-align: right;
   border: none;
   outline: none;
   padding: 10px;
   font-size: 18px;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
 
 }
 
 /* calculatore button and number */
 .calculator span {
   display: grid;
-  width: 170px;
+  width: 70px;
   height: 60px;
-  background: #292929;
+  font-size: larger;
+  background: #fff7f7;
   place-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  color: #fff;
+  border: 1px solid rgba(82, 42, 42, 0.1);
+  color: #0d0b0b;
+  border-radius: 10px 10px 10px 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 /* plus  + yellow color  */
 .calculator span:active {
   background: rgb(255, 163, 26);
   color: #fff;
-  
+
+
 }
 
 /* clear c yellow clear */
 .calculator span.clear {
   grid-column: span 2;
-  width: 340px;
-  background: rgb(255, 163, 26);
+  width: 240px;
+  background: rgba(121, 118, 118, 0.733);
+  border-radius: 10px 10px 10px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .calculator span.plus {
   grid-row: span 2;
+  border-radius: 10px 10px 10px 10px;
+  width: 70px; 
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   height: 120px;
 }
 
 /* last yellow color */
 .calculator span.equal {
-  background: rgb(255, 163, 26);
-}
-.his{
+  background: rgba(121, 118, 118, 0.733);
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 10px;
+  margin-top: 5px;
 
-      margin-bottom: 40px;
-      font-size: 20px;
+}
+
+.his {
+
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-family: sans-serif;
 }
